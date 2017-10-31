@@ -1,0 +1,393 @@
+/*---------------------------- RESETS ----------------------------*/
+
+* {
+    margin: 0; 
+    padding: 0; 
+    font-size:100%; 
+    border: none; 
+    outline: none; 
+    font-weight: 300; 
+    box-sizing: border-box; 
+    font-family: 'Triforce';
+}
+
+body {
+    background-color: #D1AF4D;
+} 
+
+/* #2A623D #2A623D*/
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*---------------------------- HEADER ----------------------------*/
+
+.cabecalho {
+    width:100%; 
+    float:left; 
+    padding: 3% 4%;
+}
+
+.logo {
+    width:120px; 
+    height:120px;
+    float:right; 
+    margin-top: 5px;
+    margin-right: 10px;
+    background: url(imgs/ZeldaLogo.png) center center/120px no-repeat; 
+    font-size:0%;
+}
+
+/*---------------------------- HEADER BUTTON MENU ----------------------------*/
+
+.menu {
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.9); 
+    top:0; 
+    left:0; 
+    position: fixed;
+    display:none;
+    z-index: 5;
+}
+
+#btn-menu {
+    width: 65px; 
+    height: 65px; 
+    float: left;
+    margin-left: 15px;
+    margin-top: 35px;
+    text-align: center; 
+    color: #FFFFFF; 
+    border-radius: 56px; 
+    cursor: pointer; 
+    background: linear-gradient(to right, #A20000, #D1AF4D);
+}
+
+#btn-close {
+    font-size: 3em; 
+    color:#FFFFFF; 
+    float:right; 
+    cursor:pointer; 
+    margin-right: 5%
+}
+
+.menu ul {
+    width: 100%; 
+    float: left; 
+    text-align: center;
+}
+
+.menu li {
+    padding: 3%;
+}
+
+.menu li a {
+    font-size: 2em; 
+    color:  #D1AF4D; 
+    padding: 3% 3% 1.5% 3%;
+}
+
+.menu li a:hover {
+    border:3px solid #D1AF4D;
+}
+
+/*---------------------------- NAVBAR ----------------------------*/
+
+/* #2A623D #D1AF4D*/
+#navbar{
+    background-color: #2A623D;
+    position: fixed;
+    z-index: 1;
+    margin-top: 0;
+    width: 100%;
+    height: 130px;
+}
+
+#navbar-menu {
+    overflow: hidden;
+    float:left;
+    margin-right:5px;
+}
+
+.fixed {
+    position: fixed; 
+    margin-top:0;
+    z-index: 1;
+    opacity: 0.7;
+}
+
+
+/*-------------- CONFIGURANDO A FONTE PARA "TRIFORCE.TTF" -----------------*/
+
+@font-face {
+    font-family: "Triforce";
+    src: url(font/Triforce.ttf) format("truetype");
+}
+
+p {
+    
+    font-family: "Triforce", cursive;
+    font-size:200%;
+    text-align: center;
+    color:#D1AF4D;
+}
+
+/*----------------------------------------------------------------------- */
+
+#background-image{
+    width:100%;
+    height: 80%;
+    position:absolute;
+    opacity: 0.06;
+    display:block;
+    margin:auto;
+    margin-top:34%;
+    z-index: -1;
+}
+
+a.button {
+   /* -webkit-appearance: button; */
+    -moz-appearance: button;
+    appearance: button;
+    background-color: #A20000; 
+    border: none;
+    border-radius: 0px;
+    padding: 5px 5px 5px 5px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block; 
+    font-size: 6px;
+    font-style: normal
+}
+
+/*-------------------------------- INDEX ---------------------------------*/
+
+#game-description {
+    margin-left: 5px;
+    text-align: left;
+    color: #2A623D;
+    font-size: 100%;
+    color: black;
+}
+            
+#title {
+    font-size: 185%;
+    width: 100%;
+    font-family: "Triforce", cursive;
+    margin-top: 135px;
+    text-align: center;    
+}
+
+/*---------------------------- CSS SLIDERSHOW ----------------------------*/
+            
+/* Slideshow container */
+.slideshow-container {
+    max-width: 90%;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Botões: anterior e próximo */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px; 
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Posiciona o botão "next" para a direita */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* No hover, adiciona um fundo preto meio translúcido */ 
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Texto das imagens */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Números do SlideShow (1/7, etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Animação de "fade" */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}    
+            
+h1 {
+    font-size: 250%;
+    color: #2A623D;
+    font-family: "Triforce", cursive;
+    text-align: center;
+}
+
+/*---------------------------- FOOTER SECTION ----------------------------*/
+
+#footer-section{
+    width: 100%;
+    height: 50px; 
+    margin-right: 100px;
+    background-color: #2A623D;
+}
+   
+#texto-footer {
+    font-family: "Triforce", cursive;
+    font-size:130%;
+    text-align: center;
+    padding-top:17px;
+    color:#D1AF4D;
+}
+
+/*---------------------------- DYNAMIC BUTTONS (DOWNLOADS)----------------------------*/
+#flex-down-buttons {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    margin-right: 50px;
+    justify-content: center;
+    background-color: #D1AF4D;   
+}
+
+.download-button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #2A623D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px #999;
+    margin-right:10px;
+    align-self: center;
+}
+
+.downolad-button:hover {background-color: #3e8e41}
+
+.download-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
+}
+#text-download-content{
+    justify-content: center;
+}
+
+#project-zelda{
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 96%;
+    align-self: center;
+}
+
+/
+/*--------------------------- WALKTHROUGH TEXT ----------------------------*/
+#game-walkthrough {
+    margin-left: 5px;
+    text-align: left;
+    color: #2A623D;
+    font-family: "Arial";
+    font-size: 100%;
+}
+/*----------------------------- BREAKPOINTS ------------------------------*/
+@media screen and (min-width: 700px) {
+    #project-zelda {
+    width:50%;
+    }
+}
+
+@media screen and (min-width: 860px) {
+    .slideshow-container {
+    max-width: 30%;
+    }
+    
+    #btn-menu {
+        display: none;
+    }
+    
+    #btn-close {
+        display: none;
+    }
+    
+    .menu {
+        width: auto;
+        height: 130px;
+        line-height: 135px;
+        margin-left: 10px;
+        float: right;
+        background-color: #2A623D;
+        display: block; !important
+        position: static;
+    }
+    
+    .menu li {
+        padding: 0;
+        float: left;
+        display: inline;
+    }
+    
+    .menu li a {
+        color: #000000; 
+        font-size: 2em; 
+        padding: 15px;
+    }
+    
+    .menu li a:hover {
+        border: none;
+        color: #D1AF4D;
+    }
+}
