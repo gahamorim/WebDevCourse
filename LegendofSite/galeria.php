@@ -5,7 +5,8 @@
         
         
 <!---------------------------- HTML SLIDESHOW -----------------------------------> 
-        
+       <center>
+           
         <div class="slideshow-container">
             
             <div class="mySlides fade">
@@ -67,7 +68,8 @@
               <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
               <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-
+           
+    </center> 
 <!---------------------------- JAVASCRIPT SLIDERSHOW ---------------------------->
         <script type="text/javascript">
             
@@ -85,7 +87,6 @@
             function showSlides(n) {
                 var i;
                 var slides = document.getElementsByClassName("mySlides");
-                var dots = document.getElementsByClassName("dot");
                 
                 if (n > slides.length) {
                     slideIndex = 1;

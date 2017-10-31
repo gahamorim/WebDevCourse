@@ -13,7 +13,7 @@
     
     <body>
         
-    <!-- ------- MENU DO HEADER MOBILE ------- -->
+    <!-- ------- MENU DO HEADER ------- -->
         <header id="navbar">
             
             <a href="header.php"> <h1 class="logo"> Legend of Zelda Site</h1></a>

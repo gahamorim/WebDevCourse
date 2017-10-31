@@ -195,7 +195,7 @@ a.button {
 .slideshow-container {
     max-width: 90%;
     position: relative;
-    margin: auto;
+    display:inline-block;
 }
 
 .mySlides {
@@ -323,6 +323,7 @@ h1 {
   box-shadow: 0 2px #666;
   transform: translateY(2px);
 }
+
 #text-download-content{
     justify-content: center;
 }
@@ -330,11 +331,14 @@ h1 {
 #project-zelda{
     margin-left: 5px;
     margin-right: 5px;
-    width: 96%;
-    align-self: center;
+    width: 90%;
 }
 
-/
+#image-download img {
+    display: block;
+    margin: 0 auto;
+}
+
 /*--------------------------- WALKTHROUGH TEXT ----------------------------*/
 #game-walkthrough {
     margin-left: 5px;
@@ -344,15 +348,25 @@ h1 {
     font-size: 100%;
 }
 /*----------------------------- BREAKPOINTS ------------------------------*/
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 400px) {
     #project-zelda {
-    width:50%;
+        width: 80%;
     }
 }
 
-@media screen and (min-width: 860px) {
+@media screen and (min-width: 768px) {
     .slideshow-container {
-    max-width: 30%;
+    max-width: 60%;
+    }
+    
+    #project-zelda {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .slideshow-container {
+    max-width: 60%;
     }
     
     #btn-menu {
@@ -389,5 +403,15 @@ h1 {
     .menu li a:hover {
         border: none;
         color: #D1AF4D;
+    }
+    
+    #project-zelda {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    #project-zelda {
+        width: 35%;
     }
 }
