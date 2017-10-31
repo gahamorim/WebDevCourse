@@ -37,8 +37,16 @@
         <a><button class="download-button"> Enviar </button></a>
 
     </form> 
+    
+    <h1 id="title">Minhas redes sociais:</h1>
+    
+    <a href="https://www.facebook.com/gabriel.amorim.95"><button style="cursor: pointer"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></button></a>
+    
+    <a href="https://www.linkedin.com/in/gabriel-amorim-99577767/"><button style="cursor: pointer"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></button></a>
+    
 </center>
 
+<br />
 <br />
 
 <?php include("footer.php")?>
