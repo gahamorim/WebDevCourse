@@ -5,7 +5,7 @@
         
         
 <!---------------------------- HTML SLIDESHOW -----------------------------------> 
-       <center>
+       
            
         <div class="slideshow-container">
             
@@ -69,7 +69,6 @@
               <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
            
-    </center> 
 <!---------------------------- JAVASCRIPT SLIDERSHOW ---------------------------->
         <script type="text/javascript">
             

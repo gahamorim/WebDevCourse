@@ -196,6 +196,8 @@ a.button {
     max-width: 90%;
     position: relative;
     display:inline-block;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 .mySlides {
@@ -209,7 +211,7 @@ a.button {
     top: 50%;
     width: auto;
     margin-top: -22px;
-    padding: 16px; 
+    padding: 16px;
     color: white;
     font-weight: bold;
     font-size: 18px;
